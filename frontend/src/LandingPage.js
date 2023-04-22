@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 function LandingPage() {
@@ -9,11 +11,22 @@ function LandingPage() {
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">
-          <img style={{maxHeight: "40px"}} src="/logo.png"/>
+          <Container>
+            <Row>
+              <Col>
+                <img style={{maxHeight: "40px"}} src="/logo.png"/>
+              </Col>
+              <Col>
+                <h1>
+                  Medical Passport
+                </h1>
+              </Col>
+            </Row>
+          </Container>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Collapse id="d-flex">
+          <Nav className="ml-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
