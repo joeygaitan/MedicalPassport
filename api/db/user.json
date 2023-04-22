@@ -1,0 +1,4 @@
+{
+    "userId" : "id",
+    "medication": ["id", "id", "id"]
+}
