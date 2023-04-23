@@ -1,5 +1,10 @@
 {
   "dependencies": {
     "concurrently": "^8.0.1"
-  }
+  },
+  "scripts": {
+    "api":"cd /api && npm run dev",
+    "front": "cd frontend && npm start",
+    "install": "npm i && cd frontend && npm i && cd .. && cd api && npm i"
+    }
 }

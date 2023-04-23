@@ -1,4 +1,7 @@
-import LandingPage from './LandingPage';
+import LandingPage from './Components/LandingPage';
+import NavBar from './Components/NavBar';
+import Search from './Components/Search';
+import User from './Components/User';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter,
@@ -19,11 +22,12 @@ function App() {
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <NavBar/>
     <BrowserRouter>
       <Routes>
           <Route path="/" element={< LandingPage />}/>
-          <Route path="/medicalHistory" element={< LandingPage />}/>
-
+          <Route path="/Search" element={<Search />}/>
+          <Route path="/user" element={<User/>}/>
       </Routes>
     </BrowserRouter>
     </div>
